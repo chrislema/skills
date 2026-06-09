@@ -1,0 +1,303 @@
+{
+ "tier": 1,
+ "meta": {
+  "title": "The Alignment Mirror",
+  "intro": [
+   "Twelve questions. Five minutes. No right answers.",
+   "This is a mirror, not a score. Read each set of descriptions and pick the one that sounds most like you right now.",
+   "What you get back is a reflection of how aligned you are \u2014 with yourself, and with the team around you."
+  ]
+ },
+ "axes": {
+  "self": {
+   "items": 7,
+   "label": "Self-alignment"
+  },
+  "team": {
+   "items": 5,
+   "label": "Team-alignment"
+  }
+ },
+ "scoring": {
+  "quadrant": {
+   "threshold": 3.0
+  },
+  "bands": {
+   "aligned": {
+    "measure": "mean",
+    "cut": 4.0,
+    "high": "compounding",
+    "low": "solid"
+   },
+   "grinder": {
+    "measure": "mean",
+    "cut": 1.9,
+    "high": "drifting",
+    "low": "depleted"
+   },
+   "lone": {
+    "measure": "gap",
+    "cut": 1.3,
+    "high": "wide",
+    "low": "opening"
+   },
+   "martyr": {
+    "measure": "gap",
+    "cut": 1.3,
+    "high": "wide",
+    "low": "opening"
+   }
+  }
+ },
+ "questions": [
+  {
+   "id": "q1",
+   "axis": "self",
+   "behavioral": true,
+   "content_cue": true,
+   "stem": "When I think about how I spent last week...",
+   "options": [
+    "I can't really remember \u2014 it was a blur of meetings and reactions.",
+    "I remember being busy, but I'd struggle to name what energized me.",
+    "There were a few moments that felt right, but most of it was grinding through.",
+    "I can point to specific work that fed me, and specific work that drained me.",
+    "I structured the week around what I know energizes me, and it mostly held."
+   ]
+  },
+  {
+   "id": "q2",
+   "axis": "team",
+   "behavioral": true,
+   "content_cue": true,
+   "stem": "If I asked five people on my team what we're really trying to accomplish right now...",
+   "options": [
+    "I'd get five different answers, and most would be vague.",
+    "I'd get answers that sound right but don't actually match each other.",
+    "The leadership group would align, but the broader team wouldn't.",
+    "Most of the team would say something close to the same thing.",
+    "The answers would be consistent, specific, and tied to how we make decisions."
+   ]
+  },
+  {
+   "id": "q3",
+   "axis": "self",
+   "behavioral": true,
+   "content_cue": false,
+   "stem": "When someone asks me to take on something new...",
+   "options": [
+    "I take it on \u2014 saying yes is how things move, and I sort out the fit later.",
+    "I take it on, though it tends to cost me more than I expected going in.",
+    "It depends who's asking \u2014 some people I'll stretch for, others I won't.",
+    "I weigh it against what I'm already committed to before I answer.",
+    "I usually know fast whether it's a yes or a no \u2014 even when the no disappoints someone."
+   ]
+  },
+  {
+   "id": "q4",
+   "axis": "team",
+   "behavioral": true,
+   "content_cue": true,
+   "stem": "When it comes to who is responsible for what on my team...",
+   "options": [
+    "It's mostly unclear, and we figure it out as we go.",
+    "People know their titles, but the actual work overlaps and gets messy.",
+    "The core roles are clear, but the edges aren't.",
+    "People know what they own and what they don't, and we revisit it when needed.",
+    "Roles are clear, current, and people use that clarity to move faster, not slower."
+   ]
+  },
+  {
+   "id": "q5",
+   "axis": "self",
+   "behavioral": false,
+   "content_cue": true,
+   "stem": "Lately, when I notice how I'm feeling physically and emotionally...",
+   "options": [
+    "I don't really notice \u2014 I'm just pushing through.",
+    "I notice I'm tired or off, but I don't know why.",
+    "I can tell something's wearing on me, but I haven't slowed down enough to figure it out.",
+    "I can usually trace what I'm feeling back to what I've been doing.",
+    "I treat how I feel as useful information and adjust accordingly."
+   ]
+  },
+  {
+   "id": "q6",
+   "axis": "team",
+   "behavioral": true,
+   "content_cue": true,
+   "stem": "When a real decision needs to get made on my team...",
+   "options": [
+    "It usually waits until I make it, even when it shouldn't.",
+    "We talk about it a lot before anything actually happens.",
+    "Some decisions move; others get stuck depending on who's involved.",
+    "People know who decides what, and decisions move at a reasonable pace.",
+    "Decision-making is a system, not a personality \u2014 it works whether I'm there or not."
+   ]
+  },
+  {
+   "id": "q7",
+   "axis": "self",
+   "behavioral": true,
+   "content_cue": true,
+   "stem": "When I get a rare unstructured hour or afternoon...",
+   "options": [
+    "I usually fill it with more work or errands without thinking about it.",
+    "I tell myself I'll do something restorative, then end up scrolling or zoning out.",
+    "I do something I enjoy, but I feel guilty about it.",
+    "I spend it on something that actually refills me \u2014 and I notice the difference afterward.",
+    "I protect that time deliberately, because I know what it does for me."
+   ]
+  },
+  {
+   "id": "q8",
+   "axis": "team",
+   "behavioral": true,
+   "content_cue": true,
+   "stem": "When I look at the people on my team and the work they're actually doing...",
+   "options": [
+    "I haven't really thought about whether the work fits them \u2014 they're just doing their jobs.",
+    "I can tell some people aren't thriving, but I don't know what to do about it.",
+    "A few people are clearly in the right roles, but others seem off and I'm not sure why.",
+    "Most people are doing work that plays to their strengths, and I can name what those are.",
+    "I've actively shaped roles around what each person does best, and I revisit it as things change."
+   ]
+  },
+  {
+   "id": "q9",
+   "axis": "self",
+   "behavioral": false,
+   "content_cue": true,
+   "stem": "When I talk about my work with people I trust...",
+   "options": [
+    "I mostly complain or vent about it.",
+    "I describe what I'm doing, but it sounds flat even to me.",
+    "There are parts I light up about and parts I avoid talking about.",
+    "I can describe what I'm doing and why it matters to me.",
+    "The way I talk about my work matches the way I actually feel doing it."
+   ]
+  },
+  {
+   "id": "q10",
+   "axis": "team",
+   "behavioral": true,
+   "content_cue": true,
+   "stem": "When I'm not in the room \u2014 out, sick, on vacation \u2014 what happens to the team's work?",
+   "options": [
+    "It mostly stalls or gets messy until I'm back.",
+    "Things keep moving, but smaller decisions pile up for me.",
+    "The day-to-day runs, but anything important waits.",
+    "The team handles most of what comes up without needing me.",
+    "The team operates well in my absence, and I trust that \u2014 it's a sign I've built it right."
+   ]
+  },
+  {
+   "id": "q11",
+   "axis": "self",
+   "behavioral": false,
+   "content_cue": true,
+   "stem": "If I imagine making a real change to how I work...",
+   "options": [
+    "I can't picture it \u2014 it feels impossible right now.",
+    "I have vague ideas, but I don't believe I can act on them.",
+    "I know what I'd change, but I haven't made room to do it.",
+    "I'm actively making changes, even if it's slow.",
+    "I've built the habit of adjusting things before they become problems."
+   ]
+  },
+  {
+   "id": "q12",
+   "axis": "self",
+   "behavioral": true,
+   "content_cue": true,
+   "stem": "The last time I felt genuinely energized by my work was...",
+   "options": [
+    "I honestly can't remember.",
+    "A while ago \u2014 months, maybe longer.",
+    "Recently, but it was a moment, not a stretch.",
+    "This past week or two, more than once.",
+    "Regularly \u2014 I've built my work so it shows up often."
+   ]
+  }
+ ],
+ "content": {
+  "quadrants": {
+   "lone": {
+    "name": "The Lone Athlete",
+    "gap_family": "correlational",
+    "validate_first": false,
+    "opener": [
+     "You've found your own footing \u2014 but the team is dragging on the alignment you've built.",
+     "You've got your own footing; the team hasn't caught up to it yet."
+    ],
+    "body": [
+     "Personally, you're doing the work. You know what energizes you. You can name what drains you. You've started shaping your time around what fits. That's real, and it's worth protecting.",
+     "But the gap between your alignment and your team's is starting to cost you \u2014 that much the answers show. Where people sitting in this spot usually feel it: carrying weight the team should hold, routing around them, or quietly resenting the dependency. None of those scale. The personal work you've done turns into a liability when the system around you can't match it.",
+     "The next move is outward. Clarity of purpose, clarity of roles, clarity of how decisions actually get made \u2014 applied to the team the same way you've applied alignment to yourself. Leaders in this quadrant usually have the energy to do it. The risk is waiting, because the gap widens faster than it closes."
+    ]
+   },
+   "martyr": {
+    "name": "The Servant Martyr",
+    "gap_family": "correlational",
+    "validate_first": false,
+    "opener": [
+     "Your team is in a good place. You haven't given yourself the same gift.",
+     "The team's in a good place. You haven't extended yourself the same care."
+    ],
+    "body": [
+     "The team is humming. Roles are clear, decisions move, people are in work that fits them. You built that. It deserves real credit.",
+     "But the care you put into the team, you don't put into yourself. Everything gets shaped around the team's needs, the business's needs, the customers' needs \u2014 and the part of you that needs shaping gets skipped. You probably tell yourself this is what leadership looks like. It's not. It's what unsustainable looks like dressed up as virtue.",
+     "There's a structural risk worth naming directly: when your energy collapses, theirs follows within weeks. The alignment you've built has a single point of failure \u2014 you. Putting yourself back on the list isn't selfish; it's structural."
+    ]
+   },
+   "aligned": {
+    "name": "The Aligned Operator",
+    "gap_family": "none",
+    "validate_first": true,
+    "opener": [
+     "You're in alignment right now \u2014 with yourself, and with the team around you.",
+     "Right now you're aligned on both fronts \u2014 yourself and the team."
+    ],
+    "body": [
+     "Both axes are working. You know what energizes you and you've built work that reflects it. The team has clarity, the right people are in the right kind of roles, and the system runs whether you're in the room or not. That's rare, and it doesn't happen by accident.",
+     "The question isn't how to get here. You're here. The question is whether alignment is an event you arrived at \u2014 or a practice you maintain. Conditions change. People change. What was aligned six months ago can quietly slip. The leaders who stay here treat alignment like a system, not a state, and recheck it before the symptoms show up.",
+     "If anything, your work now is to look for the early signals \u2014 the first place either axis starts to slip \u2014 and treat those as data, not noise."
+    ]
+   },
+   "grinder": {
+    "name": "The Grinder",
+    "gap_family": "none",
+    "validate_first": true,
+    "opener": [
+     "Most of your week is happening to you, not from you.",
+     "Right now the week runs you more than you run it."
+    ],
+    "body": [
+     "You're moving \u2014 but the movement isn't giving energy back; it's taking more than it returns. The team around you is in the same shape, which means there's nowhere for the depletion to recover. Plenty of capable people stay here for years and call it something else \u2014 busy, a hard season, a quarter they'll catch up on.",
+     "What's underneath the read: you're not spending your time on the work that feeds you, and the structures around you \u2014 roles, decisions, clarity \u2014 aren't strong enough to carry weight when you're running low. So you carry it instead. And it gets heavier.",
+     "The way out isn't more discipline or a better calendar. It's a question: what would change if you built the next thirty days around the work that actually energizes you \u2014 even partially?"
+    ]
+   }
+  },
+  "depthLeads": {
+   "aligned|solid": "Both axes clear the line, but not by a wide margin \u2014 you're aligned, with little slack.",
+   "aligned|compounding": "Both axes sit high and close \u2014 alignment with room to spare, the version that compounds.",
+   "lone|opening": "The distance between your self-alignment and your team's is still narrow \u2014 you've caught it early.",
+   "lone|wide": "Your self-alignment sits well above your team's, and that distance is already wide \u2014 wide gaps cost more to cross.",
+   "martyr|opening": "Your team's alignment sits a little above your own \u2014 the imbalance is early.",
+   "martyr|wide": "Your team's alignment sits well above your own \u2014 you're running a real deficit on yourself.",
+   "grinder|drifting": "Both axes are under the line, but not by much \u2014 this reads as drift, not collapse.",
+   "grinder|depleted": "Both axes sit low together \u2014 this isn't a rough week, it's a system running on empty."
+  }
+ },
+ "stuck_points": [],
+ "offer": null,
+ "maturity_stages": null,
+ "ranking": null,
+ "banned_phrases": [
+  "here's the thing",
+  "nobody talks about",
+  "the part nobody says",
+  "can't tell you",
+  "without naming it"
+ ]
+}
